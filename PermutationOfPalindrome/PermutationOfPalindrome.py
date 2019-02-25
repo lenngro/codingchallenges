@@ -1,6 +1,12 @@
 class POP:
 
-    def isPermutationOfPalindrome(self, str1):
+    @staticmethod
+    def isPermutationOfPalindrome(str1):
+        """
+        Test if the string can be represented as palindrome.
+        :param str1:
+        :return: True if there is a representation of the letters of the string that is a palindrome, False if not
+        """
 
         letters = {}
         for char in str1:

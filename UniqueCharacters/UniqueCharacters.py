@@ -1,5 +1,12 @@
 class UniqueCharacters:
-	def isUnique(self, word):
+
+	@staticmethod
+	def isUnique(word):
+		"""
+		Test if a word consists only of unique characters.
+		:param word:
+		:return: True if the word consists of only unique characters, False if not
+		"""
 
 		uniqueLetters = {}
 
@@ -9,8 +16,9 @@ class UniqueCharacters:
 				uniqueLetters[char] = 1
 			else:
 				return False
+
 		return True
 
 
 uc = UniqueCharacters()
-print(uc.isUnique("woord"))
+print(uc.isUnique("word"))
