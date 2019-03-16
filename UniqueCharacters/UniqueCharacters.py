@@ -1,23 +1,23 @@
 class UniqueCharacters:
 
-	@staticmethod
-	def isUnique(word):
-		"""
-		Test if a word consists only of unique characters.
-		:param word:
-		:return: True if the word consists of only unique characters, False if not
-		"""
+    @staticmethod
+    def isUnique(word):
+        """
+        Test if a word consists only of unique characters.
+        :param word:
+        :return: True if the word consists of only unique characters, False if not
+        """
 
-		uniqueLetters = {}
+        uniqueLetters = {}
 
-		for char in word:
+        for char in word:
 
-			if char not in uniqueLetters:
-				uniqueLetters[char] = 1
-			else:
-				return False
+            if char not in uniqueLetters:
+                uniqueLetters[char] = 1
+            else:
+                return False
 
-		return True
+        return True
 
 
 uc = UniqueCharacters()
